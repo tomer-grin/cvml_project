@@ -7,10 +7,10 @@ import open3d as o3d
 from geometry_utils import *
 
 # Load images
-rgb = cv2.cvtColor(cv2.imread('data/rgb.png'), cv2.COLOR_BGR2RGB)
+rgb = cv2.cvtColor(cv2.imread('projections/inverse_projection/data/rgb.png'), cv2.COLOR_BGR2RGB)
 
 # Depth is stored as float32 in meters
-depth = cv2.imread('data/depth.exr', cv2.IMREAD_ANYDEPTH)
+depth = cv2.imread('projections/inverse_projection/data/depth.exr', cv2.IMREAD_ANYDEPTH)
 
 # Get intrinsic parameters
 height, width, _ = rgb.shape
